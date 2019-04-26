@@ -159,8 +159,7 @@ function StartHuntingSession()
 		--Animals
 
 		Citizen.CreateThread(function()
-
-				
+	
 			for index, value in pairs(AnimalPositions) do
 				local Animal = CreatePed(5, GetHashKey('a_c_deer'), value.x, value.y, value.z, 0.0, true, false)
 				TaskWanderStandard(Animal, true, true)
